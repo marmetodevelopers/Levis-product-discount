@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Levis-discount-app"
+client_id = "7a068fb6d81722913e0e48a82755ff5d"
+application_url = "https://membership-tune-enquiries-me.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://membership-tune-enquiries-me.trycloudflare.com/auth/callback",
+  "https://membership-tune-enquiries-me.trycloudflare.com/auth/shopify/callback",
+  "https://membership-tune-enquiries-me.trycloudflare.com/api/auth/callback",
+  "https://membership-tune-enquiries-me.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "development-store-nikhita.myshopify.com"
